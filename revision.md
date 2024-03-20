@@ -4,7 +4,7 @@ Please prepare your report using Markdown format and save it as `readme.md`.
 
 # Task 2: Practice `printf`
 
-## 2.1. Write a program that outputs the values of the following variables to the console in seperated lines:
+## 2.1. Write a program that outputs the values of the following variables to the console in seperated lines. Only use `scanf` and `printf`. No string processing allowed.
 
 ```c
 int a = 4;
@@ -26,7 +26,7 @@ a
 Hello World!
 ```
 
-## 2.2. Write a program that outputs the values of the following attributes to the console:
+## 2.2. Write a program that outputs the values of the following attributes to the console. Only use `scanf` and `printf`. No string processing allowed.
 
 ```c
 File address in memory: 4152963
