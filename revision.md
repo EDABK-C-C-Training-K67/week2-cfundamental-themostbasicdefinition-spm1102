@@ -81,7 +81,7 @@ Date modified:      20/03/2024
 
 # Task 3: Practice `scanf`
 
-## 3.1. Develop a program that receives a real number as input and prints the number to the console.
+## 3.1. Develop a program that receives a real number as input and prints the number to the console. Only use `scanf` and `printf`. No string processing allowed.
 
 **Input:** A real number with a maximum of 6 digits  
 E.g. 3.14121, 103.167, 987654, 12345.7
@@ -96,7 +96,7 @@ E.g. 3.14121, 103.167, 987654, 12345.7
 3.14
 ```
 
-## 3.2. Develop a program that receives a real number and precision as input and prints the number with the specified precision to the console.
+## 3.2. Develop a program that receives a real number and precision as input and prints the number with the specified precision to the console. Only use `scanf` and `printf`. No string processing allowed.
 
 **Input:** Two numbers, x (maximum precision is 6) and n (0 <= n <= 100)
 
@@ -110,7 +110,7 @@ E.g. 3.14121, 103.167, 987654, 12345.7
 3.140000
 ```
 
-## 3.3. Write a program to read a string containing spaces and then print that string. Only use `scanf` and `printf`.
+## 3.3. Write a program to read a string containing spaces and then print that string. Only use `scanf` and `printf`. No string processing allowed.
 
 **Input:** String (1 - 100 characters)
 
@@ -124,7 +124,7 @@ Tran Quang Huy 20210428 ET1-05 - K66 GPA: 2.5
 Tran Quang Huy 20210428 ET1-05 - K66 GPA: 2.5
 ```
 
-## 3.4. Write a program to read a string until it reaches a number. Print that string. Only use `scanf` and `printf`.
+## 3.4. Write a program to read a string until it reaches a number. Print that string. Only use `scanf` and `printf`. No string processing allowed.
 
 **Input:** String (1 - 100 characters)
 
@@ -171,7 +171,7 @@ Full Name: Tran Quang Huy
 Tran Quang Huy
 ```
 
-## 3.7. Write a program to read student information in CSV format. Print each information on a single line. Only use `scanf` and `printf`.
+## 3.7. Write a program to read student information in CSV format. Print each information on a single line. Only use `scanf` and `printf`. No string processing allowed.
 
 **Input format**: [Name],[ID - 8 characters],[Class],[Generation - 3 characters],[GPA - number]  
 **Output format**: Name, ID, Class, Generation, GPA on 5 separate lines. Note that GPA should be in `x.xx` format.
@@ -192,7 +192,7 @@ K66
 2.50
 ```
 
-## 3.8. Write a program to read a string containing only spaces, lowercase characters, numbers from `0` to `4` and `8`, `'@'` and `'.'`. The string should stop reading when it reaches any other character. Print that string. Only use `scanf` and `printf`.
+## 3.8. Write a program to read a string containing only spaces, lowercase characters, numbers from `0` to `4` and `8`, `'@'` and `'.'`. The string should stop reading when it reaches any other character. Print that string. Only use `scanf` and `printf`. No string processing allowed.
 
 **Input:** String (1 - 100 characters)
 
@@ -206,7 +206,7 @@ tran quang huy huy.tq210428@sis.hust.edu.vn 20210428 et1-05 - k66 gpa: 2.5
 tran quang huy huy.tq210428@sis.hust.edu.vn 20210428 et1
 ```
 
-## 3.9. Implement a program that prompts the user to enter student information via the console and then prints that information in the following format:
+## 3.9. Implement a program that prompts the user to enter student information via the console and then prints that information in the following format. Only use `scanf` and `printf`. No string processing allowed.
 
 ### **Specification**
 
