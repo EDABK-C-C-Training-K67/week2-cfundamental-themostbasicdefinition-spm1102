@@ -173,7 +173,7 @@ Tran Quang Huy
 
 ## 3.7. Write a program to read student information in CSV format. Print each information on a single line. Only use `scanf` and `printf`.
 
-**Input format**: [Name],[ID - 8 characters],[Class],[Generation - 3 characters],[GPA - number]  
+**Input format**: [Name - max 30 character],[ID - 8 characters],[Class - max 9 character],[Generation - 3 characters],[GPA - float number]  
 **Output format**: Name, ID, Class, Generation, GPA on 5 separate lines. Note that GPA should be in `x.xx` format.
 
 **Input:** String (1 - 100 characters)
@@ -215,7 +215,7 @@ tran quang huy huy.tq210428@sis.hust.edu.vn 20210428 et1
 - ID: 8-digit number `yyyyxxxx`, where `yyyy` indicates the year of enrollment and `xxxx` indicates the order
 - Date of birth: `dd-mm-yyyy`
 - Field: 1 - 150 characters
-- Class: Field code, Class number, and Generation on separate lines
+- Class: Field code (1 - 5 character), Class number (integer), and Generation (3 character) on separate lines
 - GPA: Real number (0 - 4)
 
 **Output format:**
