@@ -1,3 +1,5 @@
+# **Note: All your code should be save in coresponding file in directory `src/`**
+
 # Task 1: Report
 
 Please prepare your report using Markdown format and save it as `readme.md`.
