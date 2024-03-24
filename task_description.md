@@ -1,3 +1,12 @@
+# Weekly Task 1 Description
+
+To complete the task, please read the following articles from the link provided:
+
+1. [Lập trình C Bá đạo - Bài 4->12](https://nguyenvanhieu.vn/lap-trinh-c/)
+
+These articles will provide you with an introduction to the "Học lập trình C bá đạo" course and essential information about setting up the programming environment for C.
+
+----------------------------
 # Main Task
 
 ## 1. Definition of Variables and Constants
@@ -38,6 +47,9 @@
    - What is ASCII codes?
    - Provide a table that lists characters alongside their corresponding ASCII codes (including at least 3 columns: ASCII value in base 10, ASCII value in base 16, and the corresponding character).
    - Identifying *device control* codes, *printable* codes on the console, and *extended* codes.
+
+## 7. Excercise
+   - Write your code for [Bài 11. Bài tập In ra mã ASCII của ký tự nhập từ bàn phím](https://nguyenvanhieu.vn/in-ma-ascii-cua-ky-tu-nhap-tu-ban-phim/) and [Bài 12. Bài tập hoán vị 2 số nguyên](https://nguyenvanhieu.vn/hoan-vi-2-so-trong-c/)
 
 # Additional Task
 
