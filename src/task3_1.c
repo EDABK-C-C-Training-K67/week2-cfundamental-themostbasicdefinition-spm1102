@@ -5,9 +5,8 @@
 int main(){
     double a;
     do{
-        printf("Type a real number with maximum of 6 digits: ");
         scanf("%lf",&a);
     } while ((long long)(a * pow(10,6)) != a * pow(10,6));
-    printf("The real number is: %f",a);
+    printf("%f",a);
     return 0;
 }
