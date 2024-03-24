@@ -12,7 +12,7 @@ a
 Hello World!"
 
 # Run the test
-output=$("$executable")
+output=$($executable)
 
 all_tests_passed=true
 
