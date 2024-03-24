@@ -11,6 +11,6 @@ int main(){
     printf("%f\n",b);
     printf("%c\n",c);
     printf("%hd\n",d);
-    printf("%[\n]",string)
+    printf("%[\n]",string);
     return 0;
 }
