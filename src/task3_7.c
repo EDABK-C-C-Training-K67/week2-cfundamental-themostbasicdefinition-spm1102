@@ -6,8 +6,7 @@
 int main(){
     char name[31], ID[9], Class[10], Gen[4];
     float GPA;
-    printf("Type your student information: "); 
-scanf("%[^,],%[^,],%[^,],%[^,],%f", name, ID, Class, Gen, &GPA);
+    scanf("%[^,],%[^,],%[^,],%[^,],%f", name, ID, Class, Gen, &GPA);
 
     printf("%s\n",name);
     printf("%s\n",ID);

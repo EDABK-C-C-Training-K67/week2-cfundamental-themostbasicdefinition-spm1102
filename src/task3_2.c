@@ -6,13 +6,9 @@
 int main(){
     double a;
     int n;
-    do
-    {
-        printf("Type a real number with maximum of 6 digits: ");
-        scanf("%lf",&a);
-    } while ((long long)(a * pow(10,6)) != a * pow(10,6));
-    printf("Type the number of digits you want: "); scanf("%d",&n);
-    printf("The real number with %d digits after the commas is: %.*lf",n,n,a);
-    
+    scanf("%lf",&a);
+    scanf("%d",&n);
+    printf("%d %.*lf",n,n,a);
+
     return 0;
 }

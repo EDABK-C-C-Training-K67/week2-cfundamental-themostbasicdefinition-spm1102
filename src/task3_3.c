@@ -4,8 +4,7 @@
 
 int main(){
     char a[100];
-    printf("Type a string including space: "); 
     scanf("%[^\n]", a);
-    printf("The enter string is: %s",a);
+    printf("%s",a);
     return 0;
 }
