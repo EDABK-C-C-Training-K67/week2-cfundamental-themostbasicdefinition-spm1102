@@ -11,7 +11,6 @@ int check(char c){
 }
 int main(){
     char str[100];
-    printf("Type a string satisfying the given format: ");
     scanf("%[^\n]",str);
     int i = 0;
     while(check(str[i])){
