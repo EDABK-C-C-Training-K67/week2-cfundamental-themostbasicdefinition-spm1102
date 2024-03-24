@@ -3,7 +3,7 @@
 
 int main(){
     char str[214];
-    printf("Type a string with space and number: "); scanf("%[^0-9]",str);
+    scanf("%[^0-9]",str);
     printf("%s",str);
     return 0;
 }
