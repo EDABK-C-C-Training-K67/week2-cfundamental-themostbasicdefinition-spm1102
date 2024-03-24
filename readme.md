@@ -148,6 +148,9 @@ Example printing out size of data types:
   This specifier allows `scanf` to scan character until it encounters a newline character (`\n`).
   ![alt text](image-15.png)
   ![alt text](image-16.png)
+  **%.*f\:**
+  . is used to specify precision.
+  * is a placeholder for an integer argument that specifies the precision.
 - **Printf and Scanf\:**
   - **Printf\:**  is a standard library function in C used for formatted output. It returns the value in format that is declared after the character `%`.
     Ex\: `%c` returns to character or number, `%d` returns to integer,...
