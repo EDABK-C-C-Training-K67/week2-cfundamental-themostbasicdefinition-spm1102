@@ -11,8 +11,6 @@ int main(){
     printf("%f\n",b);
     printf("%c\n",c);
     printf("%hd\n",d);
-    for(int i=0;i<strlen(string);i++){
-        printf("%c",string[i]);
-    }
+    printf("%[\n]",string)
     return 0;
 }
