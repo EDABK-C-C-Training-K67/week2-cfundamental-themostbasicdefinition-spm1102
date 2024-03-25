@@ -76,15 +76,19 @@ Example printing out size of data types:
 - **Storage mechanism\:**
   - **Unsigned Integers\:**
     - Represent non-negative whole numbers and stored in binary format using a fixed number of bits.
+  ![alt text](image-8.png)
   - **Signed Integers\:**
     - Represent both positive and negative whole numbers and stored using a system called Two's complement.
     - In Two's complement, the leftmost bit (most significant bit) is reserved to represent the sign of the number (0 for positive, 1 for negative), while the remaining bits represent the magnitude of the number.
+    ![alt text](image-17.png)
   - **Floating-Point Numbers\:**
     - Represent real numbers (numbers with fractional parts) and stored using a format specified by the IEEE 754 standard.
     - In this format, a floating-point number consists of three parts: 
       - The sign bit represents the sign of the number (0 for positive, 1 for negative).
       - The exponent represents the scale of the number.
       - The mantissa represents the significant digits of the number.
+      - There are three kinds: single precision(32 bits), double precision (64 bits) and extended double precision (80 bits)
+    ![alt text](image-24.png)
 
 - **Static, Extern, Volatile**
   - **Static\:** 
@@ -113,7 +117,7 @@ Example printing out size of data types:
  ![alt text](image-22.png)
 - **Ways to avoid overflow\:** 
   - Add condition to check the overflow:
-   ![Addtition](image.png)
+   ![Addition](image.png)
    ![Subtraction](image-1.png)
    ![Multiplication](image-2.png)
    ![Division](image-3.png)
@@ -139,22 +143,32 @@ Example printing out size of data types:
 | double             | `%lld`                 |
 | long double        | `%lf`                  |
 
-- **Extended format specifier\: %m.nf**
-  + n\: the number of digits after the commas.
-  + m\: the amount of space used for the output.
-    - m \< 0\:using m space from the left to the right for the output
-    - m \>\: using m space from the right to the left for the output.
-- **Special specifier format\: %[^\n]**
+- **Extended format specifier\:**
+  - `%m.nf`
+    + n\: the number of digits after the commas.
+    + m\: the amount of space used for the output.
+      - m \< 0\:using m space from the left to the right for the output
+      - m \>\: using m space from the right to the left for the output.
+- **Special specifier format\:**
+  - ` %[^\n]`
   This specifier allows `scanf` to scan character until it encounters a newline character (`\n`).
   ![alt text](image-15.png)
   ![alt text](image-16.png)
-  **%.*f\:**
-  . is used to specify precision.
-  * is a placeholder for an integer argument that specifies the precision.
+  - **`%.*f`\:**
+    - `.` is used to specify precision.
+    - `*` is a placeholder for an integer argument that specifies the precision.
+    ![alt text](image-7.png)
 - **Printf and Scanf\:**
   - **Printf\:**  is a standard library function in C used for formatted output. It returns the value in format that is declared after the character `%`.
     Ex\: `%c` returns to character or number, `%d` returns to integer,...
-    - Escape sequences, such as `\n` for a newline, `\t` for a tab, `\b` for a backspace, etc., can also be used inside the format string.
+    - Escape sequences\:
+      -  `\n` for a newline
+      -  `\t` for a tab
+      -  `\b` for a backspace
+      -  `\` for a backslash character
+      -  `'`  and `"` for single and double quote respectively
+      -  `\r` for moving the cursor to the beginning of the line
+      -  `\uXXXX` or `\u{XXXXX}` for representing Unicode characters by their hexadecimal code points.
   - **Scanf\:** is a standard library function in C used for formatted input. It reads input from the standard input (usually the keyboard) and stores the results into variables specified by the format string.
     - **Inputting Strings with Spaces using scanf:**
 
@@ -203,9 +217,9 @@ Example printing out size of data types:
     |   `!=`     |Different  |  7 != 3 ~ 1   |
 - **Logical operator\:**
   - **Logical AND (`&&`)\:** is a Boolean operation that evaluates two conditions to determine whether both are true. The result is true only if both operands are true; otherwise, it is false.
-   ![alt text](image-5.png)
+   ![alt text](image-5-1.png)
   - **Logical OR(`||`)\:** return the right-hand side operand if the left one is non-zero. Otherwise, it returns the left-hand side itself.
-![alt text](image-6.png)
+![alt text](image-6-1.png)
 
   - **Operator NOT (`!`)\:** return 1 when  the operand is FALSE and vice versa.
 - **Bitwise operator\:**

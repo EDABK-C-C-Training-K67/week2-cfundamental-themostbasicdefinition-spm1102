@@ -33,7 +33,6 @@ $(1): src/$(1).c
 	@echo "Compiling $(1)..."
 	@$(CC) -Wall src/$(1).c -o build/$(1)$(EXE_EXTENSION)
 	@echo "Running $(1)..."
-	@$(ALLOW_PERMISSION_COMMAND) ./$(GRADER_DIR)/$(1)$(GRADER_EXTENSION)
 	@$(GRADER_COMMAND) ./$(GRADER_DIR)/$(1)$(GRADER_EXTENSION)
 endef
 
