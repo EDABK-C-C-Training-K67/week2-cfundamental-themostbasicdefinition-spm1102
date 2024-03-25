@@ -5,10 +5,11 @@
 
 int main(){
     double a;
-    int n;
     scanf("%lf",&a);
-    scanf("%d",&n);
-    printf("%.*lf",n,a);
-
+    int dem = 0;
+    while(a * pow(10,dem) != (long long)(a * pow(10,dem))){
+        dem++;
+    }
+    printf("%.*lf",dem,a);
     return 0;
 }
