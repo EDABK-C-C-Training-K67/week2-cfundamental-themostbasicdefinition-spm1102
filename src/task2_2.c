@@ -18,7 +18,7 @@ int main(){
     printf("\nAuthor:             Tran Quang Huy");
     printf("\nSize:               4KB");
     printf("\n\nMetadata:");
-    printf("\nDate created:       19//03//2024");
+    printf("\nDate created:       19/03/2024");
     printf("\nDate modified:      20/03/2024");
     
 
