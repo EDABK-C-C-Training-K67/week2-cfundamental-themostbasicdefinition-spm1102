@@ -8,7 +8,7 @@ int main(){
     int n;
     scanf("%lf",&a);
     scanf("%d",&n);
-    printf("%d %.*lf",n,n,a);
+    printf("%.*lf",n,a);
 
     return 0;
 }
