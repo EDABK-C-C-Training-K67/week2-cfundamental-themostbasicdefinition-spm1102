@@ -17,13 +17,13 @@ int main(){
     scanf("%d",&number);
     getchar();
     scanf("%s ",gen);
-    scanf("%.2f",&gpa);
+    scanf("%f",&gpa);
 
     printf("Name: %s\n",name);
     printf("ID: %s\n",id);
     printf("Date of birth: %s/%s/%s\n",day,month,year);
     printf("Field: %s\n",field);
     printf("Class: %s-0%d-%s\n",tclass,number,gen);
-    printf("GPA: %f",gpa);
+    printf("GPA: %.2f",gpa);
     return 0;
 }

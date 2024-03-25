@@ -1,5 +1,4 @@
-//Develop a program that receives a real number and precision as input and prints the number 
-//with the specified precision to the console.
+//Develop a program that receives a real number as input and prints the number to the console.
 #include<stdio.h>
 #include<math.h>
 
