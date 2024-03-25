@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 
 int main(){
     int a = 4;
@@ -8,7 +7,7 @@ int main(){
     unsigned short d = 128;
     char string[]="Hello World!";
     printf("%d\n",a);
-    printf("%f\n",b);
+    printf("%.4f\n",b);
     printf("%c\n",c);
     printf("%hd\n",d);
     printf("%s",string);
