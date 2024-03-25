@@ -23,7 +23,7 @@ int main(){
     printf("ID: %s\n",id);
     printf("Date of birth: %s/%s/%s\n",day,month,year);
     printf("Field: %s\n",field);
-    printf("Class: %s-0%d-%s\n",tclass,number,gen);
+    printf("Class: %s-0%d - %s\n",tclass,number,gen);
     printf("GPA: %.2f",gpa);
     return 0;
 }
