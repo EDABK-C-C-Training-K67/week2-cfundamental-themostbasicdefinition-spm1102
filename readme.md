@@ -72,6 +72,7 @@ Khi nào xảy ra tràn số và cách kỹ thuật tránh tràn số.**~~
 Besides, long double, struct, union and bit-fields are also changeable according to different combinations of compiler, platform, CPU architecture and library implementation.
 <br>
 Example printing out size of data types:
+
 ![alt text](image-18.png)
 - **Storage mechanism\:**
   - **Unsigned Integers\:**
@@ -87,7 +88,7 @@ Example printing out size of data types:
       - The sign bit represents the sign of the number (0 for positive, 1 for negative).
       - The exponent represents the scale of the number.
       - The mantissa represents the significant digits of the number.
-      - There are three kinds: single precision(32 bits), double precision (64 bits) and extended double precision (80 bits)
+      - There are three kinds: single precision(32 bits), double precision (64 bits) and extended double precision (80 bits).
     ![alt text](image-24.png)
 
 - **Static, Extern, Volatile**
@@ -108,22 +109,28 @@ Example printing out size of data types:
 - **Definition\:**  phenomenon happens when users attempt to store inside a variable a value that is larger than the maximum value that the variable can hold.
 - **Example\:**
   Integer oveflow with addition\:
+
  ![alt text](image-19.png)
  Integer overflow with multiplication\:
+
  ![alt text](image-20.png)
  Integer oveflow with conversion\:
+
  ![alt text](image-21.png)
- or
+ 
  ![alt text](image-22.png)
 - **Ways to avoid overflow\:** 
   - Add condition to check the overflow:
+  
    ![Addition](image.png)
    ![Subtraction](image-1.png)
    ![Multiplication](image-2.png)
    ![Division](image-3.png)
-   - Bounding check: 
+   - Bounding check\: 
+  
     ![alt text](image-23.png)
   - Use available function of GCC compiler:
+  
    ![alt text](image-4.png)
 ## 5. **Format specifier**
 
@@ -219,7 +226,8 @@ Example printing out size of data types:
   - **Logical AND (`&&`)\:** is a Boolean operation that evaluates two conditions to determine whether both are true. The result is true only if both operands are true; otherwise, it is false.
    ![alt text](image-5-1.png)
   - **Logical OR(`||`)\:** return the right-hand side operand if the left one is non-zero. Otherwise, it returns the left-hand side itself.
-![alt text](image-6-1.png)
+  
+    ![alt text](image-6-1.png)
 
   - **Operator NOT (`!`)\:** return 1 when  the operand is FALSE and vice versa.
 - **Bitwise operator\:**
