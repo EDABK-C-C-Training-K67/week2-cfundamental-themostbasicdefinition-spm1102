@@ -1,0 +1,81 @@
+#!/bin/bash
+# Define task number
+taskNumber="3_1"
+
+# Define test cases (assuming you populate this array as needed)
+test_cases=(
+  "3.14"
+  "2.16895"
+  "1.230"
+  "4.567"
+  "0.9876"
+  "9.87654"
+  "0.12"
+  "5.4321"
+  "0.98765"
+  "3.1415"
+  "2.7182"
+  "06.2831"
+  "4.66920"
+  "1.618"
+  "3.14159"
+  "2.71828"
+  "0.16"
+  "004.590"
+  "00.900"
+  "987.63"
+  "12345.6"
+  "5.4000"
+  "987.63"
+  "03.1"
+  "00102"
+  "3087"
+  "467891"
+  "00.0005"
+  "9.87210"
+  "1238.97"
+)
+
+test_cases_output=(
+  "3.14"
+  "2.16895"
+  "1.23"
+  "4.567"
+  "0.9876"
+  "9.87654"
+  "0.12"
+  "5.4321"
+  "0.98765"
+  "3.1415"
+  "2.7182"
+  "6.2831"
+  "4.6692"
+  "1.618"
+  "3.14159"
+  "2.71828"
+  "0.16"
+  "4.59"
+  "0.9"
+  "987.63"
+  "12345.6"
+  "5.4"
+  "987.63"
+  "3.1"
+  "102"
+  "3087"
+  "467891"
+  "0.0005"
+  "9.8721"
+  "1238.97"
+)
+
+
+# Define the path to the grader script
+scriptPath="$(dirname "$0")/grader.sh"
+buildDir="./build"
+
+# Export arrays
+echo "Exporting test cases to $buildDir/array_data_$taskNumber.sh..."
+declare -p test_cases test_cases_output > "$buildDir/array_data_$taskNumber.sh"
+# Run the grader script
+/bin/bash "$scriptPath" "$taskNumber"
