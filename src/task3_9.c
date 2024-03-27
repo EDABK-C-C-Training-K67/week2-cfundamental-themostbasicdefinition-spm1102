@@ -1,7 +1,5 @@
 //Implement a program that prompts the user to enter student information
 //via the console and then prints that information in the following format:
-//Implement a program that prompts the user to enter student information
-//via the console and then prints that information in the following format:
 #include<stdio.h>
 
 int main(){
