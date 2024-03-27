@@ -1,18 +1,9 @@
-taskNumber=$1
-test_cases=$2
-test_cases_output=$3
-
-# Capture the string and arrays
-myString=$1
-IFS=' ' read -r -a array1 <<< "$2"
-IFS=' ' read -r -a array2 <<< "$3"
-
-# Use the passed string and arrays
-echo "Received string: $myString"
-echo "Received array 1: ${array1[*]}"
-echo "Received array 2: ${array2[*]}"
-
 buildDir="./build"
+
+# Capture the number and arrays
+taskNumber=$1
+
+source "$buildDir/array_data_$taskNumber.sh"
 
 # Define the path to the executable
 executable="$buildDir/task$taskNumber.out"
@@ -47,7 +38,6 @@ for ((i=0; i<${#test_cases[@]}; i++)); do
     score=10.0
     total_score=$(awk "BEGIN{printf \"%.1f\", $total_score + $score; exit}")
     passed_tests=$((passed_tests + 1))
-    echo -e "\e[31mExpected\n'$expected_output'\nbut got:\n'$output'\e[0m"
   else
     echo -e "\e[31mInput: '$input'\e[0m"
     echo -e "\e[31mExpected\n'$expected_output'\nbut got:\n'$output'\e[0m"

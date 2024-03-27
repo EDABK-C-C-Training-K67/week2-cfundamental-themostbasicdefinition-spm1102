@@ -1,7 +1,5 @@
 #!/bin/bash
-
-# Define the path to the grader script
-scriptPath="$(dirname "$0")/grader.sh"
+# Define task number
 taskNumber="2_1"
 
 # Define test cases (assuming you populate this array as needed)
@@ -17,5 +15,13 @@ a
 Hello World!"
 )
 
+
+# Define the path to the grader script
+scriptPath="$(dirname "$0")/grader.sh"
+buildDir="./build"
+
+# Export arrays
+echo "Exporting test cases to $buildDir/array_data_$taskNumber.sh..."
+declare -p test_cases test_cases_output > "$buildDir/array_data_$taskNumber.sh"
 # Run the grader script
-/bin/bash "$scriptPath" "$taskNumber" "$test_cases" "$test_cases_output"
+/bin/bash "$scriptPath" "$taskNumber"
