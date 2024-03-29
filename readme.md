@@ -214,8 +214,9 @@ Example printing out size of data types:
   - ` %[^\n]`
   This specifier allows `scanf` to scan character until it encounters a newline character (`\n`)\:
     + `^`\: used to stop reading
-  ![alt text](image-15.png)
-  ![alt text](image-16.png)
+      
+      ![alt text](image-15.png)
+      ![alt text](image-16.png)
   - **`%.*f`\:**
     - `.` is used to specify precision.
     - `*` is a placeholder for an integer argument that specifies the precision.
