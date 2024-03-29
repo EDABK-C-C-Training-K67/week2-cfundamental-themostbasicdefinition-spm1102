@@ -162,9 +162,11 @@ Example printing out size of data types:
   Integer oveflow with addition\:
 
  ![alt text](image-19.png)
+
  Integer overflow with multiplication\:
 
  ![alt text](image-20.png)
+ 
  Integer oveflow with conversion\:
 
  ![alt text](image-21.png)
