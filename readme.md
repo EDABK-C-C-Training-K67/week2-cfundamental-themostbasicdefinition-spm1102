@@ -49,10 +49,10 @@ Khi nào xảy ra tràn số và cách kỹ thuật tránh tràn số.**~~
   
 |  **Types**         |**stdint.h**|**Size**| **Range**                                                                  | **Meaning**  |
 | -------------------|------------|--------| ---------------------------------------------------------------------------| -------------|
-|   `char`           |   int8_t   |    1   |$ -2^7  \to 2^7 -1$                                                         |integer, char |
-|`unsigned char`     | uint8_t    |1       |$ 0 \to 2^8$                                                                |integer, char |
-|`short`             | int16_t    |2       |$ -2^{15} \to 2^{15}-1$                                                     |integer       |
-|`unsigned short`    | uint16_t   |2       |$ 0 \to 2^{16}$                                                             |integer       |
+|   `char`           |   int8_t   |    1   |$-2^7  \to 2^7 -1$                                                         |integer, char |
+|`unsigned char`     | uint8_t    |1       |$0 \to 2^8$                                                                |integer, char |
+|`short`             | int16_t    |2       |$-2^{15} \to 2^{15}-1$                                                     |integer       |
+|`unsigned short`    | uint16_t   |2       |$0 \to 2^{16}$                                                             |integer       |
 |`int`               |int32_t     |4       |$-2^{31}\to 2^{31}-1$                                                       |integer       |
 |`unsigned int`      | uint32_t   |4       |$0 \to 2^{32}$                                                              |integer       |
 |`long`              |            |4       |$-2^{31}\to2^{31}-1$                                                        |integer       |
