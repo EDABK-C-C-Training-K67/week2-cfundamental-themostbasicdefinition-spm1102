@@ -45,6 +45,8 @@ Khi nào xảy ra tràn số và cách kỹ thuật tránh tràn số.**~~
 |`#define`|Used for defining a macro that replaces text before compilation|`#define <name> <value>` <br><br> `#define PI 3.14`<br><br> `#define ll long long int` <br><br>`#define f(i, a, b, c) for (ll i = a; i < b; i += c)`.|
 
 ## 3. **Variable**
+- **Primitive\:**
+  
 |  **Types**         |**stdint.h**|**Size**| **Range**                                                                  | **Meaning**  |
 | -------------------|------------|--------| ---------------------------------------------------------------------------| -------------|
 |   `char`           |   int8_t   |    1   |$ -2^7  \to 2^7 -1$                                                         |integer, char |
@@ -61,19 +63,59 @@ Khi nào xảy ra tràn số và cách kỹ thuật tránh tràn số.**~~
 |`double`            |            |8       |$4.94065645841246544 × 10^{-324} \to 1.79769313486231570 × 10^{308}$        |real number   |
 |`long double`       |            |10      |$3.36210314311209350626 × 10^{-4932} \to 1.18973149535723176502 × 10^{4932}$| real number  |
 
+- **Derived data types\:** these types are derived from primitive data ones. For example, arrays, structure, pointer, union, references, functions.
+  ```c
+  //struct
+  struct person{
+    char name[50];
+    int age;
+  };
+
+  //union
+  union data{
+    int value;
+    float average;
+    char name[50];
+  };
+  ```
+- **User-defined data types\:** these are defined by the programmer to meet specific requirements. They are not part of the built-in types provided by the language. For example, `class`, `enum`, `typedef`\:
+  ```c
+  //class
+  class Circle {
+  private:
+      double radius;
+  public:
+      void setRadius(double r) {
+          radius = r;
+      }
+      double getArea() {
+          return 3.14 * radius * radius;
+      }
+  };
+
+  // enum
+  enum Direction {North, East, South, West};
+
+  //typedef
+  typedef int Length;
+  Length distance = 100; // equivalent to int distance = 100;
+  ```
+
+  
 - **Note\:**
 
-| **Types** | **16 bits** | **32 bits** | **64 bits**       |
-|:---------:| ----------- | ----------- | ----------------- |
-|   `int`   | 2 bytes     | 4bytes      | 4 bytes / 8 bytes |
-`pointer`||4 bytes| 8 bytes|
-`size_t and Ptrdiff_t`||4 bytes|8 bytes|
+| **Types**            | **16 bits** | **32 bits** | **64 bits**       |
+|:--------------------:| ----------- | ----------- | ----------------- |
+|   `int`              | 2 bytes     | 4bytes      | 4 bytes / 8 bytes |
+|`pointer`             |             |4 bytes      | 8 bytes           |
+|`size_t and Ptrdiff_t`|             |4 bytes      |8 bytes            |      
 
 Besides, `long double`, `struct`, `union` and `bit-fields` are also changeable according to different combinations of compiler, platform, CPU architecture and library implementation.
 <br>
 Example printing out size of data types:
 
 ![alt text](image-18.png)
+  
 - **Storage mechanism\:**
   - **Unsigned Integers\:**
     - Represent non-negative whole numbers and stored in binary format using a fixed number of bits.
